@@ -5,6 +5,13 @@
 
 <h1 class="display-4">Restaurants</h1>
 
+<form method="get">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" value="">
+        <button class="btn btn-outline-secondary" type="button">SEARCH</button>
+    </div>
+</form>
+
 <table class="table">
     @foreach(var restaurant in Model.Restaurants)
     {
