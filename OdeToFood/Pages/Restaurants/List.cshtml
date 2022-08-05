@@ -15,14 +15,17 @@
 <table class="table">
     @foreach(var restaurant in Model.Restaurants)
     {
-        <tr>
-            <td>@restaurant.Name</td>
-            <td>@restaurant.Location</td>
-            <td>@restaurant.Cuisine</td>
-            <td>
-                <a asp-page="./Detail" asp-route-restaurantId="@restaurant.Id" class="btn btn-outline-secondary">Details</a>
-            </td>
-        </tr>
+    <tr>
+        <td>@restaurant.Name</td>
+        <td>@restaurant.Location</td>
+        <td>@restaurant.Cuisine</td>
+        <td>
+            <a asp-page="./Detail" asp-route-restaurantId="@restaurant.Id" class="btn btn-outline-secondary">Details</a>
+        </td>
+        <td>
+            <a asp-page="./Edit" asp-route-restaurantId="@restaurant.Id" class="btn btn-outline-secondary">Edit</a>
+        </td>
+    </tr>
     }
 </table>
 
