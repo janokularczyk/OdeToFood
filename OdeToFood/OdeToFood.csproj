@@ -14,10 +14,18 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL.Design" />
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Pages\Shared\Components\" />
+    <None Remove="Pages\Shared\Components\RestaurantCount\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Pages\Shared\Components\" />
+    <Folder Include="Pages\Shared\Components\RestaurantCount\" />
   </ItemGroup>
 </Project>
